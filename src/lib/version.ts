@@ -1,2 +1,2 @@
-/** Bump on each deploy / meaningful site iteration. */
-export const SITE_VERSION = 'v1.5'
+/** Bump each iteration; commit, push main, and deploy (unless user says not to). */
+export const SITE_VERSION = 'v1.6'

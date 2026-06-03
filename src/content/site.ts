@@ -68,7 +68,7 @@ export const contactNote =
   'Whether you are planning a single charter or ongoing executive travel, our team is ready to help you fly with confidence from Teterboro and beyond.'
 
 export const footerLinks = [
-  { label: 'Home', href: '#start' },
+  { label: 'Home', href: '/' },
   { label: 'Story', href: '#story' },
   { label: 'Rates', href: '#rates' },
   { label: 'Benefits', href: '#benefits' },

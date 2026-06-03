@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import HeroSection from './components/HeroSection'
 import TestimonialsSection from './components/TestimonialsSection'
 import FaqSection from './components/FaqSection'
@@ -25,6 +26,13 @@ function PlaceholderSection({
 }
 
 function App() {
+  useEffect(() => {
+    const { hash, pathname, search } = window.location
+    if (hash === '#start' || hash === '#') {
+      window.history.replaceState(null, '', pathname + search)
+    }
+  }, [])
+
   return (
     <>
       <HeroSection />

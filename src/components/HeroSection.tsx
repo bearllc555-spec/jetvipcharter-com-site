@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { goHome } from '../lib/navigation'
 import { SITE_VERSION } from '../lib/version'
 
 const VIDEO_URL =
@@ -21,7 +22,7 @@ export default function HeroSection() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <section id="start" className="relative h-screen overflow-hidden">
+      <section className="relative h-screen overflow-hidden">
         <video
           autoPlay
           muted
@@ -37,7 +38,11 @@ export default function HeroSection() {
           <header className="mx-auto w-full max-w-7xl px-8 py-6">
             <div className="flex items-center justify-between">
               <a
-                href="#start"
+                href="/"
+                onClick={(e) => {
+                  goHome(e)
+                  closeMobileMenu()
+                }}
                 className="flex flex-col transition-colors"
               >
                 <span className="text-2xl font-semibold text-gray-900">

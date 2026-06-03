@@ -1,0 +1,16 @@
+---
+description: Deploy to production after every SITE_VERSION bump unless user opts out
+alwaysApply: true
+---
+
+# Deploy after version bump
+
+When you change `SITE_VERSION` in `src/lib/version.ts` (or bump the favicon cache query in `index.html`):
+
+1. Commit all related changes with a clear message.
+2. Push to `origin/main` so GitHub Actions deploys to Cloudflare Pages.
+3. Confirm the deploy workflow succeeded and share the live URL.
+
+**Do not deploy** only if the user explicitly says not to (e.g. "don't deploy", "hold off on push", "local only").
+
+Manual deploy fallback: `npm run pages:deploy:prod` (requires Cloudflare credentials locally).

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { business } from '../lib/business'
 import { footerLinks } from '../content/site'
+import { goHome } from '../lib/navigation'
 
 export default function SiteFooter() {
   const year = new Date().getFullYear()
@@ -41,8 +42,12 @@ export default function SiteFooter() {
           <nav className="md:col-span-6 md:justify-self-end" aria-label="Footer">
             <ul className="flex flex-wrap gap-x-8 gap-y-3">
               {footerLinks.map((l) => (
-                <li key={l.href}>
-                  <a href={l.href} className="text-sm text-white/85 transition hover:opacity-70">
+                <li key={l.label}>
+                  <a
+                    href={l.href}
+                    onClick={l.href === '/' ? goHome : undefined}
+                    className="text-sm text-white/85 transition hover:opacity-70"
+                  >
                     {l.label}
                   </a>
                 </li>
