@@ -7,7 +7,7 @@ export default function SiteFooter() {
   const [subHovered, setSubHovered] = useState(false)
 
   return (
-    <footer className="bg-[#202A36] text-white">
+    <footer className="bg-black text-white">
       <div className="mx-auto max-w-7xl px-8 py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-6">
