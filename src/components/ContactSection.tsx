@@ -43,7 +43,7 @@ function ContactIconRow({
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="bg-[#202A36] py-20 md:py-28">
+    <section id="contact" className="bg-black py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-8">
         <div className="grid gap-12 lg:grid-cols-[1fr_minmax(0,28rem)] lg:gap-16 xl:grid-cols-[1fr_30rem]">
           <div className="flex flex-col justify-center">

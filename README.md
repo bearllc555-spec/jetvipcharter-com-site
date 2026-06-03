@@ -1,6 +1,6 @@
 # jetvipcharter-com-site
 
-VIP Charters private jet landing page (v1.1) — React, Vite, Tailwind CSS, Cloudflare Pages.
+VIP Charters private jet landing page (v1.2) — React, Vite, Tailwind CSS, Cloudflare Pages. Display version lives in `src/lib/version.ts` (bump each iteration).
 
 ## Dev
 
