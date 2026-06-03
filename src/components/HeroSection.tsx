@@ -9,7 +9,9 @@ const NAV_ITEMS = [
   { label: 'Story', href: '#story' },
   { label: 'Rates', href: '#rates' },
   { label: 'Benefits', href: '#benefits' },
+  { label: 'Reviews', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'Contact', href: '#contact' },
 ] as const
 
 export default function HeroSection() {
