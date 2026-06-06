@@ -1,3 +1,59 @@
+export const introSection = {
+  title: 'The easy way to fly private from Teterboro',
+  body: 'VIP Charters connects discerning travelers with private aviation solutions through Aircraft Services Group — your partner for charter coordination from the New York metro\'s premier general aviation hub. Share your itinerary and our team will align aircraft, crew, and routing across the Northeast and nationwide.',
+  phoneLabel: 'Charter inquiries',
+} as const
+
+export const storySection = {
+  title: 'Your journey, elevated',
+  lead: 'From quote to wheels-up, Aircraft Services Group coordinates every detail so you can focus on what matters — not the logistics of getting there.',
+  bullets: [
+    'Dedicated charter coordination from our Teterboro team',
+    'Experienced flight crews on modern, well-maintained aircraft',
+    'Streamlined FBO departures with private terminal handling',
+  ],
+  image: '/images/story-cockpit.jpg',
+  imageAlt: 'Pilot at the controls of a modern private jet cockpit',
+} as const
+
+export const fleetSection = {
+  eyebrow: 'Charter options',
+  title: 'Premium aircraft, clear pricing',
+  body: 'Request a tailored quote based on aircraft class, routing, and schedule. Our team outlines options and pricing before you commit — no surprises.',
+  classes: [
+    { name: 'Light jet', detail: 'Ideal for short hops and 4–6 passengers' },
+    { name: 'Midsize', detail: 'Comfortable cabins for regional and coast-to-coast routes' },
+    { name: 'Heavy / long-range', detail: 'Intercontinental range with stand-up cabins and full amenities' },
+  ],
+  image: '/images/fleet-hangar.jpg',
+  imageAlt: 'Bombardier Global private jet parked in front of a hangar with air stairs deployed',
+} as const
+
+export const benefitsSection = {
+  title: 'Why fly private',
+  lead: 'Save time, protect privacy, and travel on your schedule with dedicated aircraft and crew from Teterboro.',
+  items: [
+    {
+      title: 'Your schedule',
+      detail: 'Depart when you\'re ready — not when the airline says so.',
+    },
+    {
+      title: 'Privacy',
+      detail: 'Private terminals and discreet handling at Teterboro and beyond.',
+    },
+    {
+      title: 'Time saved',
+      detail: 'Arrive minutes before departure. Skip lines, layovers, and delays.',
+    },
+    {
+      title: 'Door-to-door',
+      detail: 'Coordinate ground transport and FBO details in one call.',
+    },
+  ],
+  image: '/images/benefits-sunset.webp',
+  imageAlt: 'Private jet on the tarmac at sunset',
+} as const
+
 export const testimonials = [
   {
     quote:
