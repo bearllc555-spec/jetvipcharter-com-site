@@ -44,7 +44,7 @@ export default function HeroSection() {
 
         <div className="relative flex h-full flex-col">
           <header className="mx-auto w-full max-w-7xl px-8 py-6">
-            <div className="rounded-full bg-white/65 px-5 py-3 shadow-sm backdrop-blur-md md:px-8 md:py-3.5">
+            <div className="rounded-full bg-white/35 px-5 py-3 shadow-sm backdrop-blur-md md:px-8 md:py-3.5">
               <div className="flex items-center justify-between">
                 <a
                   href="/"
